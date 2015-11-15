@@ -6,10 +6,8 @@ module RSpec
   module Rails
     # Railtie to hook into Rails.
     class Railtie < ::Rails::Railtie
-      puts '--------> loading shared specs...'
-      load File.join(File.dirname(__FILE__), '.', '', 'i18n_spec.rb')
-
+      puts 'Loading shared specs...'
+      Dir[File.dirname(__FILE__) + '/specs/*.rb'].each { |file| load file }
     end
   end
 end
-

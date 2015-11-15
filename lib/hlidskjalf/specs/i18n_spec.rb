@@ -6,7 +6,7 @@ describe 'I18n' do
     d.each do |file|
       begin
         puts "checking : #{file}"
-        f =  YAML.load_file(file)
+        f = YAML.load_file(file)
 
         #Add file checks here f.to_s.include? X
         raise 'double %%' if f.to_s.include? '%%'

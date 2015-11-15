@@ -1,5 +1,5 @@
 require "hlidskjalf/version"
 
 module Hlidskjalf
-  require 'hlidskjalf/specs.rb' if defined?(RSpec)
+  require 'hlidskjalf/railtie.rb' if defined?(RSpec)
 end
