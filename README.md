@@ -1,16 +1,16 @@
 # Hlidskjalf
 
-TODO: Write a gem description
+Allows shared rspecs to be included into an exisiting project's rspecs.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Add this line to your application's Gemfile :test section:
 
     gem 'hlidskjalf'
 
 And then execute:
 
-    $ bundle
+    $ bundle install
 
 Or install it yourself as:
 
@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Spec files in lib/hlidskjalf/specs will be loaded into RSpec.
 
 ## Contributing
 
